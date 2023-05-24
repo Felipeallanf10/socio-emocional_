@@ -1,0 +1,142 @@
+:root{
+    --font-family: 'Sora', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    padding: 30px;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+#navegation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    width: 100%;
+}
+
+.nave a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 16.5px;
+    marker: none;
+}
+
+.nave a:hover {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+#sessao_1 {
+    font-family: var(--font-family);
+    background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 97vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px ;
+}
+
+#sessao_1 h3 {
+    max-width: 850px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight:600;
+    text-align: center;
+    background-color: rgb(209, 209, 209, 0.6);
+    border-radius: 10px 0 10px 0;
+    padding: 5px;
+}
+@media screen and (max-width: 820px) {
+    header {
+        display: block;
+    }
+    
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 90px ;
+        right: 0;
+        background-color: white;
+        z-index: 10000000;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+    #navegation.active #menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        transition:.7s;
+        padding: 5px;
+        visibility: visible;
+    }
+
+    #navegation.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cont{
+        display: flex;
+    }
+
+    #sessao_1 h3 {
+        max-width: 425px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 30px;
+    }
+    #sessao_1{
+        background-image: url('https://images.pexels.com/photos/3182755/pexels-photo-3182755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        height: 80vh;
+    }
+    
+
+
+}
