@@ -60,6 +60,11 @@ h1 {
     font-size: 35px;
 }
 
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #sessao_1 {
     font-family: var(--font-family);
     background-image: url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
