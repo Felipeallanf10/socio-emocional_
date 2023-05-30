@@ -1,5 +1,5 @@
 const el = document.querySelector('#text_animation');
-const text = 'Habilidades Sócio Emocionais';
+const text = 'Habilidades Sócioemocionais';
 const interval = 300;
 const int = interval * text.length + 550
 
